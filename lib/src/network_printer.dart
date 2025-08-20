@@ -57,8 +57,8 @@ class NetworkPrinter {
     _socket.add(_generator.reset());
   }
 
-  void flush() {
-    _socket.flush();
+  void flush() async {
+    await _socket.flush();
   }
 
   void text(
