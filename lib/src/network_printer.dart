@@ -57,6 +57,10 @@ class NetworkPrinter {
     _socket.add(_generator.reset());
   }
 
+  void flush() {
+    _socket.flush();
+  }
+
   void text(
     String text, {
     PosStyles styles = const PosStyles(),
